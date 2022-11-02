@@ -1,0 +1,318 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+/* Global CSS */
+a {
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+body {
+	font-family: 'Lato', sans-serif;
+}
+/* Header Section */
+header {
+	background: #f6f9f9;
+}
+header img {
+	padding: 20px 0;
+}
+
+/* Banner Section */
+
+.banner-section {
+	background: url(../img/banner.png) no-repeat center top;
+	background-size: cover;
+	padding: 120px 0;
+}
+.banner-section h2 {
+	text-align: center;
+    font-size: 120px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.banner-separator {
+	width: 48%;
+    height: 2px;
+    background: #15a4fa;
+    margin: 18px auto;
+}
+.banner-section p {
+	 margin: 38px 0;
+	text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.btn-banner {
+	border: 1px solid #15a4fa;
+	padding: 12px 45px;
+	display: block;
+    margin: 52px auto 100px;
+    font-size: 18px;
+    color: #fff;
+    background: transparent;
+    transition: all 0.3s ease-in-out;  
+}
+.btn-banner:hover {
+	background: #15a4fa;
+}
+.banner-section .fa-solid {
+	display: block;
+    text-align: center;
+    color: #fff;
+    margin-top: 160px;
+    font-size: 20px;
+}
+
+/* About Section */
+.about-section {
+	background: #f6f9f9;
+	padding: 65px 0;
+}
+
+.about-section h2 {
+	text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+.about-section p {
+	padding: 10px 50px;
+	text-align: center;
+    color: #999999;
+    font-size: 20px;
+}
+
+/* Feature Section */
+
+.feature-section {
+	text-align: center;
+	padding: 50px 0;
+}
+
+.feature-section h3 {
+	margin: 18px 0 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.feature-section p {
+	margin: 8px 0 0;
+    padding: 0 12px;
+    font-size: 16px;
+    color: #999;
+}
+
+/* Portfolio Sectoin */
+
+.porfolio-section {
+	background: #f6f9f9;
+	padding: 50px 0;
+}
+
+.porfolio-section h2 {
+	text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.porfolio-section p {
+    text-align: center;
+    color: #999999;
+    font-size: 16px;
+}
+.port-row {
+	margin: 50px 0 0;
+}
+
+.port-item {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 25px;
+	transition: all 0.4s ease-in-out;
+}
+
+.port-item img {
+	width: 100%;
+}
+.port-hover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: -100%;
+	right: 0;
+	text-align: center;
+	background: rgba(29, 157, 239, 0);
+	transition: all 0.4s ease-in-out;
+}
+
+.port-hover ul {
+	margin: 32%;
+	opacity: 0;
+	transition: all 0.4s ease-in-out;
+}
+.port-hover ul li {
+	margin: 0 5px;
+	display: inline;
+}
+
+.port-hover ul li a i {
+	color: #fff;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 45px;
+}
+.port-item:hover .port-hover {
+	background: rgba(29, 157, 239, 0.8);
+	bottom: 0;
+}
+
+.port-item:hover .port-hover ul {
+	opacity: 1;
+}
+
+/* Contact Section */
+
+.contact-section {
+	background: url(../img/contact-bg.png) no-repeat center top;
+	background-size: cover;
+	padding: 80px 0;
+	position: relative;
+	z-index: 1;
+}
+
+.contact-section::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(43, 54, 74, .8);
+	z-index: -1;
+}
+
+.contact-section h2 {
+	text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.contact-section p {
+	text-align: center;
+    color: #75787d;
+    font-size: 16px;
+}
+
+
+/* Contact Section */
+
+.form-menu {
+	margin-top: 50px;
+}
+.contact-form .form-control {
+	background: transparent;
+    border: 1px solid #999999;
+    outline: none;
+    padding: 14px;
+    border-radius: 3px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+
+.form-control:focus{
+	box-shadow: none;
+}
+
+.btn-send {
+	border: 1px solid #15a4fa;
+    padding: 10px 48px;
+    float: right;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-send:hover {
+	background: #15a4fa;
+}
+
+.custom-checkbox {
+	display: inline-block;
+    margin: 10px 0 0;
+}
+
+.custom-checkbox label {
+	padding-left: 8px;
+    color: #999999;
+}
+
+
+/* Footer Section */
+footer {
+	background: #f6f9f9;
+	padding: 20px 0;
+}
+footer p {
+	margin-top: 32px;
+	font-size: 16px;
+    color: #999;
+}
+
+.social-media {
+	text-align: right;
+	margin-top: 20px;
+}
+.social-media ul li {
+	display: inline;
+	margin: 0 3px;
+}
+.social-media ul li a .fa-brands {
+	width: 40px;
+    height: 40px;
+    background: #15a4fa;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 3px;
+}
+
+/* Responsive Mobile */
+
+@media (min-width: 320px) and (max-width: 576px) {
+
+	header img { width: 32%; margin: 0 auto; display: block;}
+	.banner-section { padding: 30px 0;}
+	.banner-section h2 { font-size: 45px;}
+	.banner-separator { width: 65%;}
+	.banner-section p { margin: 18px 0; font-size: 14px;}
+	.btn-banner { padding: 5px 12px; margin: 28px auto 0px; font-size: 13px;}
+	.banner-section .fa-solid { margin-top: 64px;}
+	.about-section h2 { font-size: 22px;}
+	.about-section { padding: 26px 0 0;}
+	.about-section p { font-size: 14px;}
+	.feature-section {padding: 20px 0;}
+	.feature-section img {width: 25%;}
+	.feature-section h3 { margin: 10px 0 0; font-size: 14px;}
+	.feature-section p { margin: 5px 0 0;padding: 0 30px;font-size: 10px;}
+	.margin-space { margin: 0 0 28px 0;}
+	.porfolio-section { padding:10px 0 0; }
+	.porfolio-section h2 { font-size: 22px; }
+	.port-row { margin: 20px 0 0;}
+	.contact-section h2 { font-size: 22px; }
+	.contact-section { padding: 40px 0; }
+	.form-menu { margin-top: 14px;}
+	footer {padding: 0;}
+	footer p { font-size: 14px; text-align: center; margin-top: 16px;}
+	.social-media { text-align: center ;margin-top: 0px;}
+}
